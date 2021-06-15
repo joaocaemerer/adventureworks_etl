@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: adventureworks_etl
+    description: This is a replica of the Postgres database used by our cliente.
+    tables:
+      - name: person_person
+        description: >
+          Person and his characterics.
+        columns:
+          - name: businessentityid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: sales_customer
+        description: Essa tabela contem informacao sobre os consumidores.
+      - name: sales_salesorderdetail
+        description: Essa tabela contem informacao detalhada das vendas.
+      - name: production_product
+        description: Essa tabela contem informacao sobre os produtos.
+      - name: sales_salesorderheader
+        description: Essa tabela contem informacao sobre as vendas.
+      - name: sales_salesorderheadersalesreason
+        description: Essa tabela liga compras as razoes.
+      - name: sales_salesreason
+        description: Essa tabela contem informacao sobre os motivos de venda.
+      - name: sales_salesperson
+        description: Essa tabela contem informacao sobre os vendedores.
+      - name: humanresources_employee
+        description: Essa tabela contem informacao sobre os empregados.
+      - name: sales_creditcard
+        description: Essa tabela contem informacao sobre os cartoes de credito.
+      - name: person_address
+        description: Essa tabela contem informacao sobre os enderecos.
+      - name: person_stateprovince
+        description: Essa tabela contem informacao sobre os estados.
+      - name: person_countryregion
+        description: Essa tabela contem informacao sobre os paises.
+       
