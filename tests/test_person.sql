@@ -5,3 +5,5 @@ with
     )
 
 select * from validation where count = 0
+
+--Tabela não vazia

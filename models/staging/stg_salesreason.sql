@@ -5,7 +5,11 @@ with
         salesreasonid
         , name
         , modifieddate
-        , reasontype
+        , CASE 
+            WHEN reasontype IS NULL
+                THEN 'Sem Resposta'
+            ELSE reasontype
+        END as reasontype
 	
 
         /* Stich columns */		
