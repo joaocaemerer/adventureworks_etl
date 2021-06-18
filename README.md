@@ -1,6 +1,8 @@
-Welcome to your new dbt project!
+### Project Using Default DB Adventura Works
 
-### Using the starter project
+Personal project.
+Learning DBT.
+
 
 Try running the following commands:
 - dbt run
